@@ -1,0 +1,15 @@
+<div class="productDetail">      
+    <div class="col-md-2 border fix-height">
+        <img ng-src="{{product_img}}">
+    </div>
+    <div class="col-md-7 border fix-height">
+        <h1>{{product_name}}</h1>
+        <p>{{product_content}}</p>
+    </div>
+    <div class="col-md-1 border fix-height">
+        <span>{{product_price| currency}}</span>
+    </div>
+    <div class="col-md-2 border fix-height">
+        <button ng-click="addCart()">add to cart</button>
+    </div>
+</div>

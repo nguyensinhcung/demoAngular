@@ -1,0 +1,127 @@
+
+.wrapper{
+    .mg-l-0{
+        margin-left: 0px;
+    }
+    .pd-l-0{
+        padding-left: 0px;
+    }
+    .pd-0{
+        padding: 0px;
+    }
+    .clearfix{
+        clear: both;
+    }
+    .border{
+        border:1px solid #cccccc;
+    }
+    .fix-height{
+        height: 170px;
+    }
+    /*start header*/
+    header{
+        position: fixed;
+        z-index: 10;
+        width:100%;
+        background-color:#fff;
+        nav{
+            text-align: right;
+            margin-top: 20px;
+            background-color: #42A98C;
+            ul{
+                position: relative;
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                li{
+                    margin: 0px;
+                    padding: 0px;
+                    a{
+                        float: left;
+                        background-color: #42A98C;
+                        color: #fff;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        padding:12px 23px;
+                        &:hover{
+                            text-decoration:none;
+                            background-color: #009999;
+                        }
+                    }
+                }
+            }
+            .search{
+                margin-top:7px;
+            }
+        }
+    }
+    /*end header*/
+    /*start content*/
+    .content{
+        padding: 20px;
+        padding-top:140px;
+        /*start left content*/
+        .left-content{
+            min-height:200px;
+            max-height:510px;
+            border: 1px solid bisque;
+            position: fixed;
+            overflow:auto;
+            h1{
+                font-size: 18px;
+                text-transform: uppercase;
+                text-align: center;
+                background-color: bisque;  
+                padding: 15px;
+                color:brown;
+                margin: 0px;
+            }
+            .api{
+                text-align: center;
+                padding: 10px;
+                border-bottom: 1px solid  bisque;
+            }
+        }
+        /*end left content*/
+        /*start right content*/
+        .right-content{
+            .home{
+                .someCtr{
+                    h1{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .product{
+                img{
+                    width: 80%;
+                    height: auto;
+                }
+                h1{
+                    font-size: 18px;
+                }
+                a.read-more, a.read-less {
+                    cursor: pointer;
+                    color: blue;
+                }
+                span.more-text {
+                    display: none;
+                } 
+                span.more-text.show {
+                    display: inline !important
+                }
+            }
+            .productDetail{
+                img{
+                    width: 80%;
+                    height: auto;
+                }
+                h1{
+                    font-size: 18px;
+                }
+            }
+        }
+        /*end right content*/
+    }
+    /*end content*/
+}

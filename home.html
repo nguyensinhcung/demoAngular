@@ -1,0 +1,22 @@
+<div class="home" ng-controller="home">
+    <div  ng-repeat="home in homes" class="col-md-4">
+        <h1>{{home.title}}</h1>
+        <p>{{home.content}}</p>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-md-12">
+        <h1>Add Some Control</h1>
+        <div ng-repeat="someControl in someControls" class="col-md-6 pd-l-0 someCtr">
+            <h1>{{someControl.title}}</h1>
+            <p>{{someControl.content}}</p>
+        </div>
+    </div>
+     <div class="clearfix"></div>
+    <div class="col-md-12">
+        <h1>Wire up a Backend</h1>
+        <div ng-repeat="wireUp in wireUps" class="col-md-6 pd-l-0 someCtr">
+            <h1>{{wireUp.title}}</h1>
+            <p>{{wireUp.content}}</p>
+        </div>
+    </div>
+</div>

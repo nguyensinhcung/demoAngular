@@ -1,0 +1,22 @@
+<div ng-controller="prd" class="product">
+    <div class="col-md-12 text-right">
+        <a href="#" > View Cart </a>
+        Quality : {{quality}} Total Price : {{totalPrice}}
+    </div>
+    <div  ng-repeat="product in products" class="col-md-12 pd-0" >
+        <div class="col-md-2 border fix-height">
+            <img ng-src="{{product.img}}"/>
+        </div>
+        <div class="col-md-7 border fix-height">
+            <h1><a ui-sref="pro1({productContent:product.content,productName:product.title,productImg:product.img,productPrice:product.price})">{{product.title}}</a></h1>
+            <p ng-readmore content="{{product.content}}">
+            </p>
+        </div>
+        <div class="col-md-1 border fix-height">
+            <span>{{product.price | currency}}</span>
+        </div>
+        <div class="col-md-2 border fix-height">
+            <button ng-click="addCart()">add to cart</button>
+        </div>
+    </div>
+</div>

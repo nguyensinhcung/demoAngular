@@ -1,0 +1,92 @@
+.wrapper {
+  /*start header*/
+  /*end header*/
+  /*start content*/
+  /*end content*/ }
+  .wrapper .mg-l-0 {
+    margin-left: 0px; }
+  .wrapper .pd-l-0 {
+    padding-left: 0px; }
+  .wrapper .pd-0 {
+    padding: 0px; }
+  .wrapper .clearfix {
+    clear: both; }
+  .wrapper .border {
+    border: 1px solid #cccccc; }
+  .wrapper .fix-height {
+    height: 170px; }
+  .wrapper header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: #fff; }
+    .wrapper header nav {
+      text-align: right;
+      margin-top: 20px;
+      background-color: #42A98C; }
+      .wrapper header nav ul {
+        position: relative;
+        list-style: none;
+        margin: 0px;
+        padding: 0px; }
+        .wrapper header nav ul li {
+          margin: 0px;
+          padding: 0px; }
+          .wrapper header nav ul li a {
+            float: left;
+            background-color: #42A98C;
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 12px 23px; }
+            .wrapper header nav ul li a:hover {
+              text-decoration: none;
+              background-color: #009999; }
+      .wrapper header nav .search {
+        margin-top: 7px; }
+  .wrapper .content {
+    padding: 20px;
+    padding-top: 140px;
+    /*start left content*/
+    /*end left content*/
+    /*start right content*/
+    /*end right content*/ }
+    .wrapper .content .left-content {
+      min-height: 200px;
+      max-height: 510px;
+      border: 1px solid bisque;
+      position: fixed;
+      overflow: auto; }
+      .wrapper .content .left-content h1 {
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: bisque;
+        padding: 15px;
+        color: brown;
+        margin: 0px; }
+      .wrapper .content .left-content .api {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid  bisque; }
+    .wrapper .content .right-content .home .someCtr h1 {
+      font-size: 18px; }
+    .wrapper .content .right-content .product img {
+      width: 80%;
+      height: auto; }
+    .wrapper .content .right-content .product h1 {
+      font-size: 18px; }
+    .wrapper .content .right-content .product a.read-more, .wrapper .content .right-content .product a.read-less {
+      cursor: pointer;
+      color: blue; }
+    .wrapper .content .right-content .product span.more-text {
+      display: none; }
+    .wrapper .content .right-content .product span.more-text.show {
+      display: inline !important; }
+    .wrapper .content .right-content .productDetail img {
+      width: 80%;
+      height: auto; }
+    .wrapper .content .right-content .productDetail h1 {
+      font-size: 18px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Demo Angular JS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controller.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <link href="css/style.css" rel="stylesheet"/>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+    </head>
+    <body ng-app="myApp">
+        <div class="wrapper">
+            <header>
+                <div class="col-md-4">
+                    <image src="images/logo.png"/>
+                </div>
+                <nav ng-controller="menuCtr" class="col-md-8 pd-0">
+                    <ul class="col-md-7">
+                        <li ng-repeat="menuItem in menuItems">
+                            <a ui-sref="{{menuItem.name}}">{{menuItem.name}}</a>
+                        </li>
+                    </ul>
+                    <div class="search col-md-5">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Go</button>
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+                <div class="clearfix"></div>
+                <hr/>
+            </header>
+            <div class="clear-fix"></div>
+            <div class="content" >
+                <div class="left-content col-md-3 pd-0" ng-controller="apiCtr">
+                    <h1>api reference</h1>
+                    <div ng-repeat="api in apis" class="api">
+                        <a href="#" ng-click="apiName(api.name)">{{api.name}}</a>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="right-content col-md-9">
+                    <div ui-view></div>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>
